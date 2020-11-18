@@ -17,6 +17,27 @@ body
 	background: #208365;
 	width: 1535px;
 }
+header ul li a
+{
+	font-size: 20px;
+}
+header ul li a:hover
+{
+	font-size: 27px;
+}
+header.sticky
+{
+	 padding: 20px 100px;
+	 background: #001133;
+}
+header .logo:hover
+{
+	border-radius: 40px;
+	padding: 20px 30px;
+	font-size: 3em;
+	background: #001133;
+	color: #ffffb3;
+}
 .container
 {
 	position: relative;
