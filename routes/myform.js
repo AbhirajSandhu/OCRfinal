@@ -9,8 +9,9 @@ router.get('/view', middleware.isLoggedIn, function(req, res){
 		  if(err){
 			  console.log(err);
 		  }else{
-			  res.render("allforms", { forms : alldata , currentUser: req.user});
-		  }
+			const admin = "admin"
+			res.render("allforms", { forms : alldata , currentUser: req.user, admin});
+		}
 	  })
   });
 
