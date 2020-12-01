@@ -12,7 +12,8 @@ middlewareObj.checkFormOwnership = function(req, res, next){
 				res.redirect("back");
 			} else{
 				//does user own the form?
-				if(foundForm.author.id.equals(req.user._id)){
+				const admin = "admin";
+				if(foundForm.author.id.equals(req.user._id)||admin == req.user.username){
 					next();
 				} else{
 					req.flash("error", "Permission Denied!");
